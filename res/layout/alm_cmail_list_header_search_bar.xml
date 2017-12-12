@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/alm_cmail_color_6_5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/alm_cmail_mail_bg_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/alm_cmail_mail_folders_padding">
+        <TextView android:textSize="@dimen/uidic_global_text_size_s16" android:textColor="@color/uidic_global_color_6_3" android:gravity="center" android:layout_gravity="center" android:id="@id/menu_mail_search" android:padding="@dimen/alm_cmail_recipient_vertical_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alm_cmail_menu_search" android:maxLines="1" android:drawableLeft="@drawable/icon_search" android:drawablePadding="@dimen/alm_cmail_mail_folders_padding" />
+    </LinearLayout>
+</LinearLayout>

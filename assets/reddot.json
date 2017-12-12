@@ -1,0 +1,203 @@
+{
+  "content": [
+    {
+      "widget_id": "ADS_0002",
+      "desc": "我的",
+      "sub": [
+        {
+          "widget_id": "ADS_0027",
+          "desc": "阿里钉钉卡",
+          "ads_id": "L_0004",
+          "local": true,
+          "type": 3,
+          "default_hide": true
+        },
+        {
+          "widget_id": "ADS_0040",
+          "desc": "钉钉指数",
+          "ads_id": "0057"
+        },
+        {
+          "widget_id": "ADS_0003",
+          "desc": "我的客服",
+          "ads_id": "0001"
+        },
+        {
+          "widget_id": "ADS_0007",
+          "desc": "福利社",
+          "ads_id": "0005"
+        },
+        {
+          "widget_id": "ADS_0036",
+          "desc": "学习专区",
+          "ads_id": "0055"
+        },
+        {
+          "widget_id": "ADS_0004",
+          "desc": "设置",
+          "sub": [
+            {
+              "widget_id": "ADS_0005",
+              "desc": "关于钉钉",
+              "sub": [
+                {
+                  "widget_id": "ADS_0006",
+                  "desc": "检查新版本",
+                  "ads_id": "0002"
+                }
+              ]
+            },
+            {
+              "widget_id": "ADS_0031",
+              "desc": "实验室",
+              "ads_id": "0048"
+            },
+            {
+              "widget_id": "ADS_0030",
+              "desc": "通用",
+              "sub": [
+                {
+                  "widget_id": "ADS_0042",
+                  "desc": "日历设置",
+                  "ads_id": "0060"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget_id": "ADS_0008",
+      "desc": "联系人",
+      "sub": [
+        {
+          "widget_id": "ADS_0013",
+          "desc": "钉钉好友",
+          "sub": [
+            {
+              "widget_id": "ADS_0014",
+              "desc": "新的好友",
+              "ads_id": "L_0001",
+              "local": true,
+              "type": 3,
+              "default_hide": true
+            }
+          ]
+        },
+        {
+          "widget_id": "ADS_0026",
+          "desc": "企业广场",
+          "ads_id": "0023"
+        }
+      ]
+    },
+    {
+      "widget_id": "ADS_0010",
+      "desc": "工作",
+      "ads_id": "L_0008",
+      "local": true,
+      "type": 1,
+      "default_hide": true
+    },
+    {
+      "widget_id": "ADS_0001",
+      "desc": "tips",
+      "ads_id": "0003"
+    },
+    {
+      "widget_id": "ADS_0012",
+      "desc": "popup",
+      "ads_id": "0007"
+    },
+    {
+      "widget_id": "ADS_0016",
+      "desc": "闪屏",
+      "ads_id": "0016"
+    },
+    {
+      "widget_id": "ADS_0017",
+      "desc": "扫一扫",
+      "ads_id": "L_0003",
+      "local": true,
+      "type": 3
+    },
+    {
+      "widget_id": "ADS_0021",
+      "desc": "外部联系人黄条Banner",
+      "ads_id": "0022"
+    },
+    {
+      "widget_id": "ADS_0023",
+      "desc": "机器人群组设置",
+      "sub": [
+        {
+          "widget_id": "ADS_0024",
+          "desc": "群设置中的机器人列表",
+          "ads_id": "0029"
+        }
+      ]
+    },
+    {
+      "widget_id": "ADS_0020",
+      "desc": "外部联系人",
+      "ads_id": "0017"
+    },
+    {
+      "widget_id": "ADS_0028",
+      "desc": "首页H5弹窗",
+      "ads_id": "0027"
+    },
+    {
+      "widget_id": "ADS_0029",
+      "desc": "钉邮邮件列表Banner",
+      "ads_id": "0041"
+    },
+    {
+      "widget_id": "ADS_0034",
+      "desc": "管理专区",
+      "ads_id": "L_0007",
+      "local": true,
+      "type": 1
+    },
+    {
+      "widget_id": "ADS_0035",
+      "desc": "IM页置顶Banner",
+      "ads_id": "0052"
+    },
+    {
+      "widget_id": "ADS_0038",
+      "desc": "外部联系人设置同行案例",
+      "ads_id": "L_0005",
+      "local": true,
+      "type": 1
+    },
+    {
+      "widget_id": "ADS_0004",
+      "desc": "设置",
+      "sub": [
+        {
+          "widget_id": "ADS_0032",
+          "desc": "新消息通知",
+          "sub": [
+            {
+              "widget_id": "ADS_0033",
+              "desc": "新消息通知设置",
+              "ads_id": "0053"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget_id": "ADS_0041",
+      "desc": "工作页头部中的工作方式触达",
+      "ads_id": "0058"
+    }
+  ]
+}
+
+
+
+
+

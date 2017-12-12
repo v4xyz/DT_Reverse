@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:email="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/divider_light_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.alibaba.android.dingtalkbase.widgets.SetupEditView android:id="@id/account_email" android:background="@color/pure_white" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0" email:editLabel="@string/dt_mail_user_lable" email:editHint="@string/dt_mail_user_hint" email:editLabelWidth="@dimen/mail_login_label_width" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/tv_default_domain" android:background="@color/pure_white" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/view_account_pass_divider" android:background="@color/divider_light_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/passwordLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.alibaba.android.dingtalkbase.widgets.SetupEditView android:id="@id/account_password" android:background="@color/pure_white" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_weight="1.0" email:editLabel="@string/mail_oauth_user_password" email:editLabelWidth="@dimen/mail_login_label_width" />
+        <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="@dimen/alm_cmail_font_size_s17" android:textColor="@color/text_color_blue" android:gravity="center_vertical" android:id="@id/iftv_pass_visible" android:background="@color/pure_white" android:paddingRight="12.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/icon_eye" android:contentDescription="@string/dt_accessibility_password_visible" />
+    </LinearLayout>
+    <View android:background="@color/divider_light_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ViewStub android:orientation="vertical" android:id="@id/account_verify_code_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="@dimen/text_size_16" android:textColor="@color/pure_white" android:id="@id/next_btn" android:background="@drawable/btn_bg_blue" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:text="@string/dt_mail_agent_login" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+        <TextView android:textSize="@dimen/alm_cmail_font_size_s14" android:textColor="@color/mail_agent_color_tt" android:id="@id/mail_login_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

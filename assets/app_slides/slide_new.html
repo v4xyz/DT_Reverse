@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Slide 4.0</title>
+  <meta name="spm-id" content="a3140">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0,,shrink-to-fit=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" id="favicon" href="https://g.alicdn.com/dingding/web/0.2.6/img/oldIcon.ico" type="image/x-icon" />
+  <meta name="author" content="www.dingtalk.com">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .speed-up{
+       -webkit-transform: translateZ(0);
+       transform: translateZ(0);
+    }
+    html,body{
+      font-family: PingFangSC-Thin;
+      height: 100%;
+      width:100%;
+      min-height: 100%;
+      overflow: hidden;
+    }
+    body {
+        -webkit-text-size-adjust:none;
+        font-family:sans-serif;
+    }
+    body{
+        background:#021C37  url('./imgs/bg.png') repeat 0px 0px;
+        background-size: 19px  22.5px;
+    }
+    #App{
+        height: 100%;
+        width: 100%;
+    }
+    .page-dots {
+        position: absolute;
+        z-index: 100;
+        bottom: 76px;
+        width: 100%;
+        text-align: center;
+    }
+    .dot{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-sizing: border-box;
+        opacity: 0.2;
+        background-color: #fff;
+    }
+    .dot.selected{
+        background-color: #38adff;
+        border:none;
+        opacity: 1;
+    }
+    .page{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container{
+        position: absolute;
+        top: 70px;
+        opacity:0;
+    }
+    .text-container4{
+        position: absolute;
+        top: 100px;
+        opacity:0;
+        text-align: center;
+        left: 0px;
+        right: 0px;
+    }
+    .text{
+        color: #fff;
+        font-size: 27px;
+        padding-left: 32px;
+        font-weight: bold;
+        text-align: left;
+        padding-right: 32px;
+    }
+    .text-s{
+        font-size: 20px;
+        font-weight: normal;
+        padding-top: 0px;
+        text-align: left;
+        line-height: 20px;
+    }
+    .text-s1{
+        font-size: 17px;
+        font-weight: normal;
+        padding-top: 3px;
+        line-height: 20px;
+    }
+    .text7{
+        /*text-align: center;
+        width: 100%;
+        top: 70px;
+        font-size: 27px;
+        padding-left: 0px;*/
+    }
+    .text8{
+        /*text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        font-weight: normal;
+        font-size: 20px;*/
+    }
+    .text8s{
+        /*font-size: 17px;
+        width: 90%;
+        margin: 0 auto;*/
+    }
+    .animated0 {
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+    }
+    .animated1 {
+        animation-duration: 0.7s;
+        -webkit-animation-duration: 0.7s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        
+    }
+    .animated3 {
+        animation-duration: 0.7s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.7s;
+        -webkit-animation-fill-mode: both;
+    }
+    .animated5 {
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+    }
+    .animated6 {
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        animation-delay: 0.1s;
+        -webkit-animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        -webkit-animation-delay: 0.1s;
+    }
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    @-webkit-keyframes fadeInRight {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+        }
+    }
+
+    .fadeInRight {
+        animation-name: fadeInRight;
+        -webkit-animation-name: fadeInRight;
+    }
+    
+    @keyframes fadeOutLeft {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+    @-webkit-keyframes fadeOutLeft {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+        }
+    }
+    .fadeOutLeft {
+        animation-name: fadeOutLeft;
+        -webkit-animation-name: fadeOutLeft;
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    @-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    .fadeInLeft {
+        animation-name: fadeInLeft;
+        -webkit-animation-name: fadeInLeft;
+    }
+    @keyframes fadeOutRight {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            transform: translate3d(100%, 0, 0);
+        }
+    }
+    @-webkit-keyframes fadeOutRight {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+        }
+    }
+    .fadeOutRight {
+        animation-name: fadeOutRight;
+        -webkit-animation-name: fadeOutRight;
+    }
+    @keyframes zoomInDown {
+        from {
+            opacity: 0;
+            transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+            opacity: 1;
+            transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes zoomInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .zoomInDown {
+        animation-name: zoomInDown;
+        -webkit-animation-name: zoomInDown;
+    }
+    @keyframes zoomOutUp {
+        40% {
+            opacity: 1;
+            transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        to {
+            opacity: 0;
+            transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+            transform-origin: center bottom;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    }
+    @-webkit-keyframes zoomOutUp {
+        40% {
+            opacity: 1;
+            -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        to {
+            opacity: 0;
+            -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+            -webkit-transform-origin: center bottom;
+            -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+    }
+    .zoomOutUp {
+        animation-name: zoomOutUp;
+        -webkit-animation-name: zoomOutUp;
+    }
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale3d(.2, .2, .2);
+        }
+
+        50% {
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes zoomIn {
+        from {
+            opacity: 0;
+            -webkit-transform: scale3d(.3, .3, .3);
+        }
+
+        50% {
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .zoomIn {
+        animation-name: zoomIn;
+        -webkit-animation-name: zoomIn;
+    }
+    .box{
+        width: 99.5%;
+        position: absolute;
+        top:140px;
+        left: 0.5%;
+    }
+    .one{
+        background: transparent url('./imgs/1.png') no-repeat 0px 0px;
+        background-size: 535px 340px;
+        height:340px;
+        width: 535px;
+        opacity: 0;
+    }
+    .two{
+        background: transparent url('./imgs/2.png') no-repeat 0px 0px;
+        background-size: 535px 340px;
+        height:340px;
+        width: 535px;
+        opacity: 0;
+    }
+    .three{
+        background: transparent url('./imgs/3.png') no-repeat 0px 0px;
+        background-size: 535px 340px;
+        height:340px;
+        width: 535px;
+        opacity: 0;
+    }
+    .fourth{
+        opacity: 0;
+        position: absolute;
+        top:150px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+    }
+    .fourth img{
+        width: 100%;
+        max-width: 100%;
+    }
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 320px) {
+        .text{
+            font-size: 23px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 16px;
+        }
+        .one,
+        .two,
+        .three{
+            background-size: 356.6px 226.7px;
+            height:226.7px;
+            width: 356.6px;
+        }
+        .text-container4{
+            top:50px;
+        }
+        .fourth{
+            top:100px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 320px)
+    and (min-device-height:500px) {
+        .text{
+            font-size: 23px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 16px;
+        }
+        .box{
+            top:160px;
+        }
+        .one,
+        .two,
+        .three{
+            background-size: 440px 279.6px;
+            height:279.6px;
+            width: 440px;
+        }
+        .text-container4{
+            top:70px;
+        }
+        .fourth{
+            top:150px;
+        }
+    }
+    /**
+    * iPhone 4/4s landscape & portrait
+    */
+    @media only screen
+    and (min-device-width: 321px)
+    and (max-device-width: 360px) {
+        .text{
+            font-size: 23px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 16px;
+        }
+        .box{
+            top:160px;
+        }
+        .one,
+        .two,
+        .three{
+            background-size: 440px 279.6px;
+            height:279.6px;
+            width: 440px;
+        }
+        .text-container4{
+            top:70px;
+        }
+        .fourth{
+            top:150px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 321px)
+    and (max-device-width: 360px)
+    and (min-device-height:600px){
+        .box{
+            top:180px;
+        }
+        .fourth{
+            top:150px;
+        }
+
+    }
+    @media only screen
+    and (min-device-width: 361px)
+    and (max-device-width: 413px) {
+        .box{
+            top:200px;
+        }
+        .text-container{
+            top: 70px;
+        }
+        .one,
+        .two,
+        .three{
+            background-size: 535px 340px;
+            height:340px;
+            width: 535px;
+        }
+        .text-container4{
+            top:70px;
+        }
+        .fourth{
+            top:180px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 768px)
+    and (min-device-height:600px) {
+        .box{
+            top:300px;
+        }
+        .fourth{
+            top:240px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 768px)
+    and (min-device-height:900px) {
+        .text-container{
+            top: 170px;
+        }
+        .text-container4{
+            top:170px;
+        }
+        .one,
+        .two,
+        .three{
+            margin: 0 auto;
+        }
+    }
+    @media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 768px){
+
+    }
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1300px)
+    and (orientation: landscape) {
+        .text{
+            font-size: 44px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 28px;
+            padding-top: 8px;
+            line-height: 30px;
+        }
+        .box{
+            top: 220px;
+        }
+        .one,
+        .two,
+        .three{
+            margin: 0 auto;
+        }
+        .fourth img{
+            width: 50%;
+            max-width: 50%;
+        }
+        .text{
+            padding-left: 0px;
+            width: 100%;
+            text-align: center
+        }
+        .fourth{
+            top: 180px;
+        }
+        .text-container{
+            top: 130px;
+            text-align: center;
+            width: 100%;
+        }
+        .text-container4{
+            top:130px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 1301px)
+    and (max-device-width: 1366px)
+    and (orientation: landscape) {
+        .box{
+            top: 350px;
+        }
+        .text{
+            font-size: 44px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 28px;
+            padding-top: 8px;
+            line-height: 30px;
+        }
+        .one,
+        .two,
+        .three{
+            margin: 0 auto;
+        }
+        .fourth img{
+            width: 40%;
+            max-width: 40%;
+        }
+        .text{
+            padding-left: 0px;
+            width: 100%;
+            text-align: center
+        }
+        .fourth{
+            top: 310px;
+        }
+        .text-container{
+            top: 230px;
+            text-align: center;
+            width: 100%;
+        }
+        .text-container4{
+            top:230px;
+        }
+    }
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1366px)
+    and (orientation: portrait) {
+        .box{
+            top: 340px;
+        }
+        .text{
+            font-size: 44px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 28px;
+            padding-top: 8px;
+            line-height: 30px;
+        }
+        .one,
+        .two,
+        .three{
+            margin: 0 auto;
+        }
+        .fourth img{
+            width: 50%;
+            max-width: 50%;
+        }
+        .text{
+            padding-left: 0px;
+            width: 100%;
+            text-align: center
+        }
+        .fourth{
+            top: 330px;
+        }
+        .text-container{
+            top: 220px;
+            text-align: center;
+            width: 100%;
+        }
+        .text-container4{
+            top:220px;
+        }
+    }
+	
+	@media only screen 
+	and (min-device-width: 361px)
+	and (-webkit-min-device-pixel-ratio: 1){
+        .box{
+            top:120px;
+        }
+		.text{
+            font-size: 23px;
+        }
+        .text-s,
+        .text-s1{
+            font-size: 16px;
+        }
+        .one,
+        .two,
+        .three{
+            background-size: 440px 279.6px;
+            height:279.6px;
+            width: 440px;
+        }
+        .text-container4{
+            top:70px;
+        }
+        .fourth{
+            top:120px;
+        }
+    }
+
+  </style>
+</head>
+<body>
+    <div id="App" class="speed-up"></div>
+    <script type="text/tpl" id="tpl-cn">
+            <div class="page" id="page0">
+                <div class="box">
+                    <div class="one"></div>
+                </div>
+                <div class="box">
+                    <div class="two"></div>
+                </div>
+                <div class="box">
+                    <div class="three"></div>
+                </div>
+                <div class="text-container text-container1">
+                    <div class="text text1">30年前，</div>
+                    <div class="text text-s text2">人们还停留在纸质办公时代</div>
+                </div>
+                <div class="text-container text-container2">
+                    <div class="text text3">20年前，</div>
+                    <div class="text text-s text4">人们开始进入电脑办公时代</div>
+                </div>
+                <div class="text-container text-container3">
+                    <div class="text text5">3年前，</div>
+                    <div class="text text-s text6">钉钉1.0，开启移动办公时代</div>    
+                </div>
+                <div class="text-container text-container4">
+                    <div class="text text7">今天,&nbsp;钉钉4.0全新发布</div>
+                    <div class="text text-s text8">引领智能办公新时代</div>
+                </div>
+                
+                <div class="fourth">
+                    <img src="./imgs/4_1.png"/>
+                </div>
+            </div>
+            <div class="page-dots" id="page-dots">
+                <span class="dot selected"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+    </script>
+<script type="text/tpl" id="tpl-en">
+        <div class="page" id="page0">
+            <div class="box">
+                <div class="one"></div>
+            </div>
+            <div class="box">
+                <div class="two"></div>
+            </div>
+            <div class="box">
+                <div class="three"></div>
+            </div>
+            <div class="text-container text-container1">
+                <div class="text text1">30 years ago</div>
+                <div class="text text-s1 text2">All office work was still stuck on using paper documents</div>
+            </div>
+            <div class="text-container text-container2">
+                <div class="text text3">20 years ago</div>
+                <div class="text text-s1 text4">People just entered into the age of the computer</div>
+            </div>
+            <div class="text-container text-container3">
+                <div class="text text5">3 years ago</div>
+                <div class="text text-s1 text6">DingTalk 1.0 started office mobilization</div>    
+            </div>
+            <div class="text-container4">
+                <div class="text text7">Today</div>
+                <div class="text text-s1 text8">DingTalk 4.0. Leading us into the age of the intelligent workspace</div>
+            </div>
+            
+            <div class="fourth">
+                <img src="./imgs/4.png"/>
+            </div>
+        </div>
+        <div class="page-dots" id="page-dots">
+            <span class="dot selected"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+</script>    
+<script src="./zepto.js"></script>    
+<script src="./hammer.min.js"></script>
+<script type="text/javascript">
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    var locale = getQueryString("locale");
+    if(locale=='en'){
+        var tpl = $('#tpl-en').html();
+        $('#App').html(tpl);
+    }else{
+        var tpl = $('#tpl-cn').html();
+        $('#App').html(tpl);
+    }
+    function init(){
+        var dotIndex = 0;
+        var dotNode = $('#page-dots .dot');
+        var hammertime = new Hammer(document.getElementById("App"));
+        var id = '#page0';
+        var container1 = $(id).find('.text-container1').addClass('animated1 fadeInRight');
+        var container2 = $(id).find('.text-container2');
+        var container3 = $(id).find('.text-container3');
+        var container4 = $(id).find('.text-container4');
+        var img1 = $(id).find('.one').addClass('animated0 fadeInRight');
+        var img2 = $(id).find('.two');
+        var img3 = $(id).find('.three');
+        var img4 = $(id).find('.fourth');
+        hammertime.on('panup',function(){
+            return;
+        });
+        hammertime.on('pandown',function(){
+            return;
+        });
+        hammertime.on("swipeleft", function (e) {
+            if(dotIndex>=0&&dotIndex<3){
+                dotNode.eq(dotIndex).removeClass('selected');
+                dotIndex++;
+                dotNode.eq(dotIndex).addClass('selected');
+            }
+            if(dotIndex==1){
+                container1.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                img1.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                container2.removeClass('fadeOutRight fadeOutLeft').addClass('animated3 fadeInRight');
+                img2.removeClass('fadeOutRight fadeOutLeft').addClass('animated5 fadeInRight');
+            }else if(dotIndex==2){
+                container2.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                img2.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                container3.removeClass('fadeOutRight fadeOutLeft').addClass('animated3 fadeInRight');
+                img3.removeClass('fadeOutRight fadeOutLeft').addClass('animated5 fadeInRight');
+            }else if(dotIndex==3){
+                container3.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                img3.removeClass('fadeInLeft fadeInRight').addClass('fadeOutLeft');
+                container4.removeClass('fadeOutRight fadeOutLeft').addClass('animated3 fadeInRight');
+                img4.removeClass('zoomOutUp').addClass('animated6 zoomIn');
+            }
+        });
+        hammertime.on("swiperight", function (e) {
+            if(dotIndex>=1&&dotIndex<=3){
+                dotNode.eq(dotIndex).removeClass('selected');
+                dotIndex--;
+                dotNode.eq(dotIndex).addClass('selected');
+            }
+            if(dotIndex==0){
+                container2.removeClass('fadeOutLeft fadeInLeft').addClass('fadeOutRight');
+                img2.removeClass('fadeOutLeft fadeInLeft').addClass('fadeOutRight');
+                container1.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+                img1.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+            }else if(dotIndex==1){
+                container3.removeClass('fadeOutLeft fadeInLeft').addClass('fadeOutRight');
+                img3.removeClass('fadeOutLeft fadeInLeft').addClass('fadeOutRight');
+                container2.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+                img2.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+            }else if(dotIndex==2){
+                container4.removeClass('fadeOutLeft fadeInLeft').addClass('fadeOutRight');
+                img4.removeClass('zoomOutUp zoomIn')
+                container3.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+                img3.removeClass('fadeInRight fadeOutLeft').addClass('fadeInLeft');
+            }
+        });
+    }
+    init();
+</script>
+</body>
+</html>

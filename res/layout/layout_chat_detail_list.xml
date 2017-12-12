@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_bottom" android:background="@color/pure_white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/pure_white" android:id="@id/btn_save" android:background="@drawable/select_btn_style" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/space_save" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/rl_bottom">
+        <com.alibaba.android.dingtalkim.views.NestListView android:id="@id/listview" android:background="@color/uidic_global_background_color" android:focusable="false" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/im_emotion_weight_2_transparent" android:divider="@color/im_emotion_weight_2_transparent" android:dividerHeight="1.0dip" />
+    </ScrollView>
+</RelativeLayout>

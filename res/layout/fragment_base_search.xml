@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ui_common_window_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_item_common_selector" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0dip" android:layout_alignParentLeft="true" android:overScrollMode="never" />
+    <com.alibaba.android.search.widget.ExtendedListView android:id="@id/extend_list_view" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_item_common_selector" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0dip" android:layout_alignParentLeft="true" android:overScrollMode="never" />
+    <ImageView android:id="@id/divider_common_contact_container" android:background="@color/bg_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_search_empty_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/search_empty_icon" />
+        <TextView android:textSize="@dimen/uidic_global_text_size_s17" android:textColor="@color/text_color_gray" android:layout_gravity="center_horizontal" android:id="@id/tv_empty_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/empty_search_content" />
+        <com.alibaba.android.search.widget.SearchFeedbackView android:layout_gravity="center_horizontal" android:id="@id/feedback_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" />
+        <include android:id="@id/layout_cloud_search_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" layout="@layout/footer_cloud_msg_tips" />
+    </LinearLayout>
+</LinearLayout>

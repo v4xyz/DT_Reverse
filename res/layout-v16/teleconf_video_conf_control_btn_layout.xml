@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video_mute" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/conf_txt_voip_slience">
+        <RelativeLayout android:id="@id/video_slience_view" android:background="@drawable/conf_video_white_circle_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_slience_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/teleconf_video_silence_icon" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/pure_white" android:gravity="center" android:id="@id/video_slience_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/conf_txt_voip_slience" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video_speaker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/conf_txt_video_speaker">
+        <RelativeLayout android:id="@id/video_speaker_view" android:background="@drawable/conf_video_white_circle_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_speaker_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/teleconf_video_mute_speaker_icon" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/pure_white" android:gravity="center" android:id="@id/video_speaker_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/conf_txt_video_speaker" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video_mute_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/conf_txt_video_mute_camera">
+        <RelativeLayout android:id="@id/video_mute_camera_view" android:background="@drawable/conf_video_white_circle_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_mute_camera_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/teleconf_video_mute_camera_icon" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/pure_white" android:gravity="center" android:id="@id/video_mute_camera_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/conf_txt_video_mute_camera" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_video_switch_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/dt_accessibility_camera_switch_back">
+        <RelativeLayout android:id="@id/video_switch_camera_view" android:background="@drawable/conf_video_white_circle_shape" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_switch_camera_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/teleconf_video_back_camera_icon" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/pure_white" android:gravity="center" android:id="@id/video_switch_camera_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/conf_txt_video_switch_camera" android:importantForAccessibility="no" />
+    </LinearLayout>
+</LinearLayout>

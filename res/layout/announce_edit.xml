@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uidic_global_text_size_s15" android:textColor="@color/uidic_global_color_6_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="@string/announce_group_content_edit_help" />
+    <EditText android:scrollbarStyle="outsideInset" android:textSize="@dimen/uidic_global_text_size_s17" android:textColor="@color/uidic_global_color_6_6" android:gravity="center|left|top" android:id="@id/announce_edit_text" android:background="@null" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:hint="@string/chat_input_edit_hint" android:layout_weight="1.0" android:fadeScrollbars="false" />
+</LinearLayout>

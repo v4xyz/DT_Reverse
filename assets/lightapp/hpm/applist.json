@@ -1,0 +1,121 @@
+{
+  "appList": [
+    {
+      "appId": "-4",
+      "name": "aflow",
+      "version": "5.9.9.10242158",
+      "url": "https://file.dingtalk.com/hpm/lATPBY0V4qHEXw3OJ6NDS84pktBd.amr",
+      "size": 610388,
+      "created_time": "1508853540.",
+      "status": 4,
+      "system_min": "1",
+      "sdk_min": "1.0.0",
+      "icon_url": "",
+      "client_max": "100",
+      "launch_params": {},
+      "auto_install": true,
+      "system_max": "100",
+      "client_min": "1",
+      "sdk_max": "2.0.0",
+      "online": true,
+      "extend_info": {
+        "home": "https://aflow.dingtalk.com/dingtalk",
+        "status": 1
+      }
+    },
+    {
+      "appId": "-2",
+      "name": "blackboard",
+      "version": "2.0.1.201710162030",
+      "url": "https://static.dingtalk.com/media/lATPBY0V4pu1MyzONyJL585Z36Z6.amr",
+      "size": 138845,
+      "created_time": "1508157109.",
+      "status": 4,
+      "system_min": "1",
+      "sdk_min": "1.0.0",
+      "icon_url": "",
+      "client_max": "100",
+      "launch_params": {},
+      "auto_install": true,
+      "system_max": "100",
+      "client_min": "1",
+      "sdk_max": "2.0.0",
+      "online": true,
+      "extend_info": {
+        "home": "https://app.dingtalk.com/blackboard",
+        "native_enable": false,
+        "status": 1
+      }
+    },
+    {
+      "appId": "-8",
+      "name": "attendance",
+      "version": "8.0.1.09261624",
+      "url": "https://static.dingtalk.com/media/lATPBY0V4o_dIevOVELqss4JaiU_.amr",
+      "size": 303700,
+      "created_time": "1506415029.",
+      "status": 4,
+      "system_min": "1",
+      "sdk_min": "1.0.0",
+      "icon_url": "",
+      "client_max": "100",
+      "launch_params": {},
+      "auto_install": true,
+      "system_max": "100",
+      "client_min": "1",
+      "sdk_max": "2.0.0",
+      "online": true,
+      "extend_info": {
+        "home": "https://attendance.dingtalk.com/attendance",
+        "status": 1
+      }
+    },
+    {
+      "appId": "2",
+      "name": "report",
+      "version": "1.2.2.10131950",
+      "url": "https://static.dingtalk.com/media/lATPBY0V4pnupYjOIPrlS85mKHSN.amr",
+      "size": 461251,
+      "created_time": "1507895650.",
+      "status": 4,
+      "system_min": "1",
+      "sdk_min": "1.0.0",
+      "icon_url": "",
+      "client_max": "100",
+      "launch_params": {},
+      "auto_install": true,
+      "system_max": "100",
+      "client_min": "1",
+      "sdk_max": "2.0.0",
+      "online": true,
+      "extend_info": {
+        "home": "https://landray.dingtalkapps.com/alid",
+        "status": 1
+      }
+    },
+    {
+      "appId": "-9",
+      "name": "industry_versatility",
+      "version": "1.0.1.10192055",
+      "url": "https://file.dingtalk.com/hpm/lATPBY0V4p5Ei1bOTr77zM5Gdo5i.amr",
+      "size": 170007,
+      "created_time": "1508418068.",
+      "status": 4,
+      "system_min": "1",
+      "sdk_min": "1.0.0",
+      "icon_url": "",
+      "client_max": "100",
+      "launch_params": {},
+      "auto_install": true,
+      "system_max": "100",
+      "client_min": "1",
+      "sdk_max": "2.0.0",
+      "online": true,
+      "extend_info": {
+        "home": "https://h5.dingtalk.com/industry_versatility",
+        "native_enable": false,
+        "status": 1
+      }
+    }
+  ]
+}

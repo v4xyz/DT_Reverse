@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="@dimen/alm_cmail_mail_folder_marginTop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/top_line_1" android:background="@color/alm_cmail_color_c5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/manual_distribute_layout" android:background="@drawable/alm_cmail_mail_common_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/alm_cmail_mail_account_item_height">
+            <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="@color/alm_cmail_color_6_6" android:gravity="center|left" android:layout_gravity="center" android:id="@id/mail_distribute_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_cmail_distribute_mail_title" />
+            <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="@color/mail_agent_color_tt" android:ellipsize="end" android:gravity="center|right" android:id="@id/mail_distribute_desc" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <ImageView android:gravity="center|right" android:id="@id/mail_sign_right_arrow" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/auto_distribute_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/top_line_2" android:background="@color/alm_cmail_color_c5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/alm_cmail_mail_list_dividerHeight" />
+            <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="@drawable/actbar_btn_text_color" android:gravity="center" android:id="@id/distribute_org_mails_by_pinyin" android:background="@drawable/actbar_btn_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmail_config_item_margin_left" android:layout_marginRight="@dimen/cmail_config_item_margin_right" android:minHeight="@dimen/alm_cmail_mail_folder_item_height" android:text="@string/dt_mail_orgmail_dispatch_title" />
+            <TextView android:textSize="@dimen/alm_cmail_font_size_s14" android:textColor="@color/mail_agent_color_tt" android:id="@id/distribute_org_mails_by_pinyin_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmail_config_item_margin_left" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/cmail_config_item_margin_right" android:text="@string/dt_mail_dispatch_way_desc" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

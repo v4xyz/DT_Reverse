@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/uidic_global_text_size_s12" android:textColor="@color/ui_common_level3_text_color" android:gravity="center_vertical" android:id="@id/tv_search_more_title" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/dt_search_global_category_title" />
+    <com.alibaba.android.dingtalkbase.widgets.views.WrapGridView android:id="@id/grid_view" android:background="@color/pure_white" android:paddingLeft="@dimen/search_more_container_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/search_more_container_padding" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:verticalSpacing="20.0dip" android:stretchMode="none" android:numColumns="4" />
+</merge>

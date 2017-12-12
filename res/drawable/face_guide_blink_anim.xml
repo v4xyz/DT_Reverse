@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/face_guide_blink3" />
+    <item android:duration="40" android:drawable="@drawable/face_guide_blink2" />
+    <item android:duration="200" android:drawable="@drawable/face_guide_blink1" />
+    <item android:duration="40" android:drawable="@drawable/face_guide_blink4" />
+    <item android:duration="200" android:drawable="@drawable/face_guide_blink3" />
+    <item android:duration="40" android:drawable="@drawable/face_guide_blink2" />
+    <item android:duration="200" android:drawable="@drawable/face_guide_blink1" />
+    <item android:duration="40" android:drawable="@drawable/face_guide_blink4" />
+    <item android:duration="200" android:drawable="@drawable/face_guide_blink3" />
+    <item android:duration="40" android:drawable="@drawable/face_guide_blink2" />
+    <item android:duration="750" android:drawable="@drawable/face_guide_blink1" />
+</animation-list>

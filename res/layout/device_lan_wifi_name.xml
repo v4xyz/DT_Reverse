@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/uidic_forms_item" android:background="@drawable/_uidic_forms_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/uidic_forms_item_top_divider" android:background="@color/_uidic_forms_item_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <EditText android:textSize="@dimen/_uidic_forms_item_text_size" android:textColor="@color/_uidic_forms_item_text_color" android:id="@id/et_wifi_name" android:background="@color/uidic_global_color_transparent" android:layout_width="fill_parent" android:layout_height="@dimen/_uidic_forms_item_height" android:layout_marginLeft="10.0dip" android:hint="@string/dt_alpha_setting_wifi_placehold" android:singleLine="true" android:drawablePadding="@dimen/_uidic_forms_item_text_drawable_padding" android:layout_toRightOf="@id/uidic_forms_item_text" android:layout_centerVertical="true" />
+            <View android:id="@id/uidic_forms_item_inner_bottom_divider" android:background="@color/_uidic_forms_item_inner_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/_uidic_forms_item_padding" />
+            <View android:id="@id/uidic_forms_item_bottom_divider" android:background="@color/_uidic_forms_item_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14_in_sp" android:textColor="@color/_uidic_forms_item_tip_text_color" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/dt_alpha_setting_wifi_warn" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_17_in_sp" android:textColor="@color/C6_5" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/device_blue_btn_selector" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dt_alpha_setting_wifi_confirm" />
+    </LinearLayout>
+</RelativeLayout>

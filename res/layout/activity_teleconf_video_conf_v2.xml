@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/teleconf_video_fragment_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.android.teleconf.widget.TeleCustomViewPager android:id="@id/video_pages" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.alibaba.android.teleconf.widget.LinePageIndicator android:id="@id/video_pages_indicator" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" indicator:lineUnselectedColor="@color/conf_line_unselected_color" indicator:lineSelectedColor="@color/pure_white" indicator:lineLineWidth="24.0dip" indicator:linesStrokeWidth="3.0dip" indicator:lineGapWidth="5.0dip" xmlns:indicator="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

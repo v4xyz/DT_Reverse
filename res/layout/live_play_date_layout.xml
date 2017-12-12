@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <TextView android:textSize="@dimen/text_size_28" android:textColor="#66ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_lv_live_ended" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/live_cover_iv" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/live_upload_img_shape" />
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="#0cffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="#ffffffff" android:id="@id/live_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#8fffffff" android:id="@id/live_time_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_lv_live_duration" android:layout_below="@id/live_time" android:layout_alignLeft="@id/live_time" />
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/live_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:singleLine="true" android:layout_below="@id/live_time_des" android:layout_alignLeft="@id/live_time_des" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#8fffffff" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_lv_group_member_number" android:layout_below="@id/live_member_count" android:layout_alignLeft="@id/live_member_count" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/live_pv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#8fffffff" android:id="@id/live_pv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_lv_live_watched_times" android:layout_below="@id/live_pv" android:layout_alignLeft="@id/live_pv" />
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/live_uv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:singleLine="true" android:layout_below="@id/live_pv_des" android:layout_alignLeft="@id/live_pv_des" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="#8fffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_lv_watched_people_number" android:layout_below="@id/live_uv" android:layout_alignLeft="@id/live_uv" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:textSize="@dimen/text_size_17" android:textColor="@color/text_color_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button_group_chat" android:background="@drawable/live_data_bt_white_shape" android:layout_width="163.0dip" android:layout_height="44.0dip" android:layout_margin="10.0dip" android:text="@string/dt_lv_back_to_group_chat" />
+        <Button android:textSize="@dimen/text_size_17" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button_play_replay" android:background="@drawable/live_data_bt_shape" android:layout_width="163.0dip" android:layout_height="44.0dip" android:layout_margin="10.0dip" android:text="@string/dt_lv_view_playback" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="7.0dip" android:maxLines="2" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/mail_detail_time" android:id="@id/tv_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/mail_agent_color_tt" android:layout_gravity="center" android:id="@id/img_has_attach" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:drawableLeft="@drawable/cmail_detail_attach_icon" android:drawablePadding="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_sender" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_recipient" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/cmail_detail_recipient_selector" android:ellipsize="end" android:id="@id/tv_recipient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/alm_icon_right" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/alm_cmail_font_size_s14" android:textColor="@color/alm_cmail_remind_bg" android:ellipsize="end" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/tips_title" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_mail_to_different_org_tips" android:maxLines="1" android:drawableLeft="@drawable/icon_warn_fill" android:drawablePadding="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/mail_from_chat" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="#ff000000" android:id="@id/tv_from_chat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_mail_detail_backtoconv_oto" android:maxLines="1" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/cmail_detail_recipient_selector" android:ellipsize="end" android:id="@id/tv_from_chat_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:id="@id/top_line_3" android:background="@color/new_message_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ViewStub android:id="@id/alm_event_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" />
+    <TextView android:textSize="@dimen/alm_cmail_font_size_s14" android:textColor="@color/alm_cmail_color_c1" android:gravity="center" android:id="@id/alm_mail_image_holder" android:background="@drawable/alm_bg_load_image_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="6.0dip" android:minHeight="32.0dip" android:text="@string/alm_cmail_mail_image_holder" />
+</LinearLayout>

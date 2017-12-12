@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/user_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_dark" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mail_session_subject_header" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:singleLine="true" />
+    <View android:background="@color/third_msg_action_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

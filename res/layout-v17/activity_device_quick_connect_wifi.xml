@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/C6_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_empty" android:paddingBottom="40.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/device_shape_circle_gray" android:layout_width="125.0dip" android:layout_height="125.0dip">
+            <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="55.0sp" android:textColor="@color/C6_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_C1_unlink" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_17_in_sp" android:textColor="@color/device_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/dt_alpha_get_ssid_fail" android:alpha="0.56" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_quick_connect" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <TextView android:textSize="@dimen/text_size_15_in_sp" android:textColor="@color/device_black" android:id="@id/tv_corp_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_alpha_connect_wifi_subtitle" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_size_28_in_sp" android:textStyle="bold" android:textColor="@color/device_black" android:id="@id/tv_ssid_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="@dimen/text_size_15_in_sp" android:textColor="@color/device_black" android:id="@id/icon_connect_error_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/icon_C1_unlink" android:alpha="0.56" />
+                <TextView android:textSize="@dimen/text_size_15_in_sp" android:textColor="@color/device_black" android:id="@id/tv_connect_error_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.56" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="170.0dip" android:layout_marginTop="15.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_connect_status" android:background="@drawable/device_shape_circle_blue" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip">
+                    <ImageView android:id="@id/iv_img_connect_status" android:background="@drawable/device_wifi_connecting_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_size_17_in_sp" android:textColor="@color/C6_5" android:id="@id/tv_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/dt_alpha_connect_wifi_title" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_quick_connect_wifi" android:background="@drawable/device_shape_circle_blue_gradient" android:paddingBottom="6.0dip" android:layout_width="150.0dip" android:layout_height="150.0dip">
+                    <TextView android:textSize="@dimen/text_size_24_in_sp" android:textStyle="bold" android:textColor="@color/C6_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_alpha_tap_connect_action" />
+                    <TextView android:textSize="@dimen/text_size_16_in_sp" android:textStyle="bold" android:textColor="@color/C6_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/dt_alpha_connect_wifi_title" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="66.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_get_dynamic_pwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="@dimen/text_size_28_in_sp" android:textColor="@color/device_text_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/icon_password" />
+                <TextView android:textSize="@dimen/text_size_15_in_sp" android:textColor="@color/device_text_black_selector" android:id="@id/tv_get_dynamic_pwd" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_alpha_connect_wifi_bottom_get_pwd" android:lineSpacingExtra="5.0dip" android:alpha="0.56" />
+            </LinearLayout>
+            <View android:background="@color/_uidic_forms_item_divider_color" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_client_auth" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="@dimen/text_size_28_in_sp" android:textColor="@color/device_text_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/icon_C1_device" />
+                <TextView android:textSize="@dimen/text_size_15_in_sp" android:textColor="@color/device_text_black_selector" android:id="@id/tv_client_auth" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and_alpha_get_terminate_empty" android:lineSpacingExtra="5.0dip" android:alpha="0.56" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

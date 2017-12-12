@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/vertical_scroll_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_search_all_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_recommend_search_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_contacts_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_external_contacts_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_network_search_container" android:background="@color/pure_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/ui_common_level2_line_bg_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="16.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="@dimen/uidic_global_text_size_s12" android:textColor="@color/ui_common_level2_icon_bg_color" android:id="@id/tv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/icon_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_search_icon_orange" android:background="@drawable/search_icon_orange" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toLeftOf="@id/tv_right_arrow" android:layout_toRightOf="@id/iv_search_icon_orange" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/ui_common_body_text_size" android:textColor="@color/ui_common_level1_text_color" android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dt_network_search_mobile" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/ui_common_theme_text_color" android:layout_gravity="center_vertical" android:id="@id/network_search_mobile_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_my_group_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_public_group_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_function_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ding_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_mail_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_space_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_lightapp_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_org_homepage_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_dark_gray" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_loading" android:layout_alignParentLeft="true" />
+            <ProgressBar android:id="@id/loading_indicator" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tv_loading" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_search_empty_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/search_empty_icon" />
+            <TextView android:textSize="@dimen/uidic_global_text_size_s17" android:textColor="@color/text_color_gray" android:layout_gravity="center_horizontal" android:id="@id/tv_empty_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/empty_search_content" />
+        </LinearLayout>
+        <include android:id="@id/layout_search_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" layout="@layout/all_search_item_search_more" />
+        <com.alibaba.android.search.widget.SearchFeedbackView android:gravity="center" android:id="@id/feedback_view" android:background="@color/ui_common_content_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+    </LinearLayout>
+</ScrollView>

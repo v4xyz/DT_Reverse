@@ -1,0 +1,149 @@
+.class final Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;
+.super Ljava/lang/Object;
+.source "ChatMsgActivity.java"
+
+# interfaces
+.implements Lcpx$d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;->b(J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+.field private b:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView$a;
+
+
+# direct methods
+.method constructor <init>(Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;)V
+    .locals 0
+    .param p1, "this$0"    # Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    .prologue
+    .line 6661
+    iput-object p1, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(IILjava/lang/Object;)V
+    .locals 2
+    .param p1, "mode"    # I
+    .param p2, "anchorPosition"    # I
+    .param p3, "obj"    # Ljava/lang/Object;
+
+    invoke-static {}, Lcom/pnf/dex2jar2;->a()I
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/pnf/dex2jar2;->b(I)V
+
+    .prologue
+    .line 6687
+    iget-object v0, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    iget-object v0, v0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;->o:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;
+
+    if-eqz v0, :cond_0
+
+    .line 6688
+    iget-object v0, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    iget-object v0, v0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;->o:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;
+
+    iget-object v1, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->b:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView$a;
+
+    invoke-virtual {v0, v1}, Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;->a(Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView$a;)V
+
+    .line 6690
+    :cond_0
+    return-void
+.end method
+
+.method public final a(ILjava/lang/Object;)V
+    .locals 0
+    .param p1, "mode"    # I
+    .param p2, "obj"    # Ljava/lang/Object;
+
+    .prologue
+    .line 6667
+    return-void
+.end method
+
+.method public final a(ILjava/lang/Object;Z)V
+    .locals 0
+    .param p1, "mode"    # I
+    .param p2, "obj"    # Ljava/lang/Object;
+    .param p3, "should"    # Z
+
+    .prologue
+    .line 6671
+    return-void
+.end method
+
+.method public final a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 0
+    .param p1, "mode"    # I
+    .param p2, "code"    # Ljava/lang/String;
+    .param p3, "reason"    # Ljava/lang/String;
+    .param p4, "obj"    # Ljava/lang/Object;
+
+    .prologue
+    .line 6675
+    invoke-static {p2, p3}, Lbtf;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6676
+    return-void
+.end method
+
+.method public final b(ILjava/lang/Object;)V
+    .locals 1
+    .param p1, "mode"    # I
+    .param p2, "obj"    # Ljava/lang/Object;
+
+    .prologue
+    .line 6680
+    iget-object v0, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    iget-object v0, v0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;->o:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;
+
+    if-eqz v0, :cond_0
+
+    .line 6681
+    iget-object v0, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->a:Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;
+
+    iget-object v0, v0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity;->o:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;
+
+    invoke-virtual {v0}, Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView;->getCurrentAnchor()Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView$a;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/alibaba/android/dingtalkim/activities/ChatMsgActivity$17;->b:Lcom/alibaba/android/dingtalkim/imtools/ChatMsgListView$a;
+
+    .line 6683
+    :cond_0
+    return-void
+.end method
+
+.method public final c(ILjava/lang/Object;)V
+    .locals 0
+    .param p1, "mode"    # I
+    .param p2, "obj"    # Ljava/lang/Object;
+
+    .prologue
+    .line 6695
+    return-void
+.end method

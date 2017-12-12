@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/cspace_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/view_item_1" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/text_text_arrow_item_layout" />
+    <View android:id="@id/will_gone_line" android:background="@color/_uidic_forms_item_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" />
+    <include android:id="@id/view_item_2" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/text_text_arrow_item_layout" />
+    <View android:background="@color/_uidic_forms_item_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" />
+    <include android:id="@id/view_item_3" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/text_text_arrow_item_layout" />
+    <View android:background="@color/_uidic_forms_item_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

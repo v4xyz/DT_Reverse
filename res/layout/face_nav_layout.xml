@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/face_nav_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="40.0px" android:textColor="#ff333333" android:gravity="center_horizontal" android:id="@id/face_nav_dialog_text" android:layout_width="fill_parent" android:layout_height="120.0px" android:layout_marginTop="852.0px" android:text="请本人亲自按提示做动作" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/face_nav_button_back" android:background="@drawable/face_nav_button" android:layout_width="fill_parent" android:layout_height="138.0px" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="164.0px" android:scaleType="fitStart" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:textSize="32.0px" android:textColor="#ffffffff" android:id="@id/face_nav_button" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:text="马上开始" android:layout_alignTop="@id/face_nav_button_back" android:layout_centerHorizontal="true" />
+</RelativeLayout>

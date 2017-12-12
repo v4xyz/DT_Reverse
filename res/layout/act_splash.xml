@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/pure_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/welcome_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+    <Button android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/btn_check_detail" android:background="@drawable/btn_grey" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginRight="33.0dip" android:minHeight="30.0dip" android:text="@string/jump" android:singleLine="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/splash_welcome_logo_height" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/welcome_logo_bg" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/welcome_logo" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

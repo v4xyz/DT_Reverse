@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ui_common_cell_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ddm="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <com.alibaba.alimei.cspace.view.DropDown.DropDownMenu android:gravity="center" android:id="@id/menu_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" ddm:iconVisible="true" ddm:iconIconFont="@string/icon_arrow_more" ddm:nameCanChanged="true" ddm:enableClick="true" ddm:itemTextSize="14.0dip" ddm:itemTextColorStateList="@color/cspace_menu_style" />
+        <com.alibaba.alimei.cspace.view.DropDown.DropDownMenu android:gravity="center" android:id="@id/menu_edit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" ddm:iconVisible="false" ddm:nameCanChanged="true" ddm:enableClick="true" ddm:itemTextSize="14.0dip" ddm:itemText="@string/space_op_multi_select" ddm:itemTextColorStateList="@color/cspace_menu_style" />
+        <com.alibaba.alimei.cspace.view.DropDown.DropDownMenu android:gravity="center" android:id="@id/menu_new" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" ddm:iconVisible="false" ddm:nameCanChanged="true" ddm:enableClick="true" ddm:itemTextSize="14.0dip" ddm:itemText="@string/space_op_create_folder" ddm:itemTextColorStateList="@color/cspace_menu_style" />
+    </LinearLayout>
+    <View android:background="@color/ui_common_level1_line_bg_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

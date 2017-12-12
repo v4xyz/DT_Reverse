@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/list_empty_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.android.dingtalkbase.iconfont.IconFontTextView android:textSize="90.0dip" android:textColor="@color/alm_public_sub_line" android:id="@id/iftv_empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_cspace_notrends" />
+    <TextView android:textSize="@dimen/alm_cmail_font_size_s16" android:textColor="@color/alm_cmail_color_6_2" android:gravity="center|top" android:id="@id/tv_empty_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/space_recent_no_record" style="@style/cspace_item_weight_16" />
+    <TextView android:textSize="@dimen/alm_cmail_font_size_s14" android:textColor="@color/alm_cmail_color_6_2" android:gravity="center|top" android:id="@id/tv_empty_description" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/dt_cspace_main_recent_empty_info" style="@style/cspace_item_weight_14" />
+</LinearLayout>

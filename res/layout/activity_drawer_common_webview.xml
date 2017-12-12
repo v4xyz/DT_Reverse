@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@color/lightapp_actionbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:comment="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_comment" android:layout_below="@id/toolbar">
+        <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/lightapp_actionbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/activity_common_webview" />
+            </FrameLayout>
+            <ViewStub android:layout_gravity="start" android:id="@id/drawer_stub_layout" android:layout="@layout/drawer_layout" android:layout_width="250.0dip" android:layout_height="fill_parent" />
+        </android.support.v4.widget.DrawerLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/toolbar" android:background="@drawable/lightapp_bg_color" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentTop="true">
+        <include layout="@layout/toolbar_layout" />
+    </FrameLayout>
+    <com.alibaba.android.dingtalkbase.widgets.views.comment.CommentView android:id="@id/view_comment" android:background="@color/pure_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_alignParentBottom="true" comment:directLeftRight="false" comment:showSplit="false" comment:showNumber="true" />
+</RelativeLayout>

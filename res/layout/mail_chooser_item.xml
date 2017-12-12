@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/cspace_list_item_selected" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_mail_icon" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.6">
+        <ImageView android:id="@id/img_mail_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/_uidic_forms_item_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_mail_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="2.0" />
+</LinearLayout>

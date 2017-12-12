@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tl="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/actionbar_split" android:background="@drawable/shadow_cover" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.alibaba.alimei.cspace.view.NonSwipeableViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/mail_bottom_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.alibaba.alimei.widget.tab.CommonTabLayout android:id="@id/tab_common" android:background="@color/alm_cmail_color_6_5" android:layout_width="fill_parent" android:layout_height="54.0dip" tl:tl_indicator_color="@color/alm_cmail_color_c2" tl:tl_indicator_height="0.0dip" tl:tl_textSelectColor="@color/alm_cmail_color_c2" tl:tl_textUnselectColor="@color/alm_cmail_color_6_2" tl:tl_textsize="12.0sp" tl:tl_underline_color="@color/alm_cmail_color_6_2" tl:tl_underline_height="1.0dip" tl:tl_iconWidth="23.0dip" tl:tl_iconHeight="23.0dip" />
+</LinearLayout>

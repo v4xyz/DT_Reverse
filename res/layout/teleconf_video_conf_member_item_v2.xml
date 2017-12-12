@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/conf_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/member_avatar_view" android:layout_width="52.0dip" android:layout_height="52.0dip">
+        <com.alibaba.android.teleconf.widget.TeleVideoAnimationFrameLayout android:id="@id/member_avatar_state_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.alibaba.android.dingtalkbase.widgets.AvatarImageView android:layout_gravity="center" android:id="@id/member_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" avatar:textSize="@dimen/text_size_14" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/conf_status_txt_color" android:gravity="center" android:layout_gravity="center" android:id="@id/member_state" android:background="@drawable/conf_status_bg_circle_small_shape" android:visibility="gone" android:layout_width="41.0dip" android:layout_height="41.0dip" />
+            <RelativeLayout android:id="@id/member_anim_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.alibaba.android.dingtalkbase.widgets.AvatarImageView android:id="@id/member_avatar_backup" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" avatar:textSize="@dimen/text_size_14" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/conf_status_txt_color" android:gravity="center" android:id="@id/member_state_backup" android:background="@drawable/conf_status_bg_circle_small_shape" android:visibility="gone" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/member_in_mute" android:background="@drawable/conf_status_mute_circle_small_shape" android:layout_width="41.0dip" android:layout_height="41.0dip">
+                <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/teleconf_video_remote_speaker_off_icon" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </com.alibaba.android.teleconf.widget.TeleVideoAnimationFrameLayout>
+        <com.alibaba.android.dingtalkbase.widgets.views.wave.WaveView android:id="@id/member_in_speaker" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" wave:wvCircleColor="@color/conf_record_quota_fg_color" wave:wvCircleInnerRadius="20.0dip" xmlns:wave="http://schemas.android.com/apk/res-auto" />
+        <ImageView android:id="@id/member_in_video" android:layout_width="19.0dip" android:layout_height="19.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/conf_video_indicator_icon" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/C6_5" android:id="@id/member_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

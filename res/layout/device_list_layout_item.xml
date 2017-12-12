@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_common_white_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/uidic_cell_margin_size" android:button="@null" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/UserCheckBoxTheme" />
+    <com.alibaba.android.dingtalkbase.widgets.AvatarImageView android:textColor="@color/uidic_global_color_6_5" android:gravity="center" android:id="@id/tv_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/uidic_cell_margin_size" android:layout_marginTop="@dimen/uidic_cell_min_margin" android:layout_marginBottom="@dimen/uidic_cell_min_margin" android:src="@drawable/user" android:layout_toRightOf="@id/checkbox" android:layout_centerVertical="true" avatar:textSize="@dimen/uidic_global_text_size_s12" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+    <TextView android:textSize="@dimen/uidic_global_text_size_s17" android:id="@id/tv_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uidic_cell_margin_size" android:layout_toRightOf="@id/tv_avatar" android:layout_centerVertical="true" />
+    <View android:background="@color/uidic_global_color_c5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignLeft="@id/tv_item" android:layout_alignParentBottom="true" />
+</RelativeLayout>
